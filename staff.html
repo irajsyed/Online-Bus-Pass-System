@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Signup Form Design</title>
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    background-image: url(bus4.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.loginbox{
+    width: 520px;
+    height: 550px;
+    background: rgba(0,0,0,0.87);
+    border-radius: 10%;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 80px 80px;
+}
+
+h1{
+		font-family: Century Gothic;
+        letter-spacing: 0.2em;
+		word-spacing: 0.1em;
+        font-size: 4em;
+		font-weight: 10000;
+		font-style: bold;
+		text-transform: uppercase;
+		text-align: center;
+		color: white;
+		padding-top: 20px;
+	}
+
+h1{
+    margin: -50;
+    padding: 0 0 60px;
+    text-align: center;
+    font-size: 22px;    
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: Century Gothic;
+    letter-spacing: 0.1em;
+	word-spacing: 0.1em;
+}
+ input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+ input[type="name"],input[type="desig"],input[type="id_no"],input[type="dept"],input[type="Date"],input[type="Amount"]
+{   
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Century Gothic;
+    letter-spacing: 0.1em;
+	word-spacing: 0.1em;
+}
+ input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:  #f57a15;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    font-family: Century Gothic;
+    letter-spacing: 0.1em;
+	word-spacing: 0.1em;
+} input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: blanchedalmond;
+    
+} a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+    font-family: Century Gothic;
+    letter-spacing: 0.1em;
+	word-spacing: 0.1em;
+} a:hover
+{
+    color: #ffc107;transition: all 0.15s ease-in ;
+}
+</style>
+<body>
+    <div class="loginbox">
+        <h1>STAFF</h1>
+        <form action = "staff.php" method = 'POST'>
+            <input  type="name" name="name" placeholder="Enter Name" required="name">
+
+            <input  type="desig" name="desig" placeholder="Enter Designation" required="Designation">
+
+            <input  type="dept" name="dept" placeholder="Enter Department" required="dept">
+
+            <input  type="id_no" name="id_no" placeholder="Enter ID  Number" required="id no">
+
+            <input  type="Amount" name="Amount" placeholder="Enter Amount" required="Charge">
+
+            <input  type="Date" name="Date"  required="Date">
+ 
+            <input type="submit" name="submit" value="Submit">
+            <a href="student.html">Not a staff member?</a><br>
+        </form>
+    </div>
+</body>
+</head>
+</html

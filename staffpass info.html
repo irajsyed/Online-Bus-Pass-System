@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STAFF PASS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+		 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+		  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+</head>
+
+<style>
+
+    * {
+        margin: 0;
+        padding-top: 0;
+    }
+
+    body {
+        background-image: url('bus11.jpg');
+        background-size: 100% 110%;
+        width: 100%;
+        height: 100vh;
+    }
+
+
+
+    .form-wrap {
+        width: 390px;
+        background: rgba(0,0,0,0.87);
+        padding: 40px 20px;
+        box-sizing: border-box;
+        border-radius: 25px;
+
+        position: fixed;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1{
+		font-family: Century Gothic;
+        letter-spacing: 0.1em;
+		word-spacing: 0.1em;
+        font-size: 2em;
+		font-weight: 10000;
+		font-style: bold;
+		text-transform: uppercase;
+		text-align: center;
+		color: white;
+		padding-top: 10px;
+	}
+
+    h1 {
+        text-align: center;
+        color: #fff;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 100%;
+        background: none;
+        border: 1px solid #fff;
+        padding: 6px 15px;
+        box-sizing: border-box;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #fff;
+        font-family: Century Gothic;
+        letter-spacing: 0.1em;
+	    word-spacing: 0.1em;
+    }
+
+        input[type="button"] {
+            background: #bac675;
+            border: 0;
+            cursor: pointer;
+            color: #3e3d3d;
+            font-family: Century Gothic;
+        letter-spacing: 0.1em;
+	    word-spacing: 0.1em;
+        }
+
+            input[type="button"]:hover {
+                background: #a4b15c;
+                transition: .6s;
+            }
+            ::placeholder {
+        color: #fff;
+    }
+</style>
+
+<body>
+
+    
+
+    <div class="form-wrap">
+
+        <form action="staffpass.php" method="POST">
+            <h1>STAFF INFORMATION</h1>
+            <input type="id_no" name="id_no" placeholder="           Enter ID no" required="id_no">
+           
+            <input  style="background-color: #fb2525; margin-top: 15px;" type="Submit" name="Submit" value="Generate Pass" >
+        </form>
+
+    </div>
+
+
+
+</body>
+
+
+
+</html>

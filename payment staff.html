@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+		  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding-top: 0;
+    }
+
+    body {
+        background-image: url('bus3.jpg');
+        background-size: 100% 110%;
+        width: 100%;
+        height: 100vh;
+    }
+
+
+
+    .form-wrap {
+        width: 530px;
+        background: rgb(0, 0, 0,.9);
+        padding: 40px 45px;
+        box-sizing: border-box;
+        border-radius: 25px;
+
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        text-align: center;
+        color: #fff;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 100%;
+        background: none;
+        border: 1px solid #fff;
+        padding: 6px 15px;
+        box-sizing: border-box;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #fff;
+    }
+
+        input[type="button"] {
+            background: #bac675;
+            border: 0;
+            cursor: pointer;
+            color: #3e3d3d;
+        }
+
+            input[type="button"]:hover {
+                background: #a4b15c;
+                transition: .6s;
+            }
+            ::placeholder {
+        color: #fff;
+    }
+    @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.payment{
+  background: #f8f8f8;
+  max-width: 450px;
+  margin: 10px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 40px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.payment h2{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #6e0e77;
+}
+
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+select {
+  text-align: center;
+  text-align-last: center;
+}
+option {
+  text-align: left;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.input1{
+  padding: 10px 0px 10px 25px;
+  width: 220%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 14px;
+  color: #555555;
+}
+
+.input2{
+  padding: 13px 0px 13px 25px;
+  width: 208%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 14px;
+  color: #555555;
+}
+.input3{
+  padding: 13px 0px 13px 25px;
+  width: 208%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.card-grp{
+  display: inline-table;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 33px;
+  left: 15px;
+  font-size: 20px;
+  color: #6e0e77;
+}
+
+.btn{
+  margin-top: 10px;
+  background:#6e0e77;
+  padding: 12px;
+  width: 30%;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+  position:absolute;
+  transition: .5s ease;
+  top: 90%;
+  left: 35%;
+}
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+}
+</style>
+<body>
+
+  
+    <div class="form-wrap">
+
+        <form action="pay staff.php" method="POST">
+
+            <h1>Payment</h1>
+           
+            <div>
+
+                    <div class="card space icon-relative">
+                      <div class="card-item icon-relative">
+                        <label style="color: #f8f8f8" class="label">Payment Option:</label>
+                        <select name="option" id="exMonth" class="input2" title="Choose a payment type" required>
+                          <option value="" disabled selected>Select a payment option</option>
+                          <option value="debit">Debit Card</option>
+                          <option value="credit">Credit Card</option>
+                        </select>
+                       </div> 
+                    </div>
+              
+                    <div class="card space icon-relative">
+                      <label style="color: #f8f8f8"  class="label">Card holder:</label>
+                      <input name="name" type="text" id="name" class="input" placeholder="Card Holder" required>
+                      <i class="fas fa-user"></i>
+                    </div>
+              
+                    <div class="card space icon-relative">
+                      <label style="color: #f8f8f8" class="label">Card number:</label>
+                      <input name="no" type="text" id="cardnumber" class="input" data-mask="0000 0000 0000 0000" placeholder="0000 0000 0000 0000" required>
+                      <i class="far fa-credit-card"></i>
+                    </div>
+              
+                    <div class="card-item icon-relative">
+                      <label style="color: #f8f8f8" class="label">CVC:</label>
+                      <input type="text" name="cvc" id="cvcnumber" class="input3" data-mask="000" placeholder="000">
+                      <i class="fas fa-lock"></i>
+                    </div>
+              
+                    <div class="space"></div>
+              
+                    <div class="card-grp space">
+                      <div class="card-item icon-relative">
+                        <label style="color: #f8f8f8" class="label">Expiry date:</label>
+                        <select id="exMonth" class="input1" title="select a month">
+                          <option class="option" value="" disabled selected>Select a Month</option>
+                          <option class="option" value="01">January</option>
+                          <option class="option" value="02">February</option>
+                          <option class="option" value="03">March</option>
+                          <option class="option" value="04">April</option>
+                          <option class="option" value="05">May</option>
+                          <option class="option" value="06">June</option>
+                          <option class="option" value="07">July</option>
+                          <option class="option" value="08">August</option>
+                          <option class="option" value="09">September</option>
+                          <option class="option" value="10">October</option>
+                          <option class="option" value="11">November</option>
+                          <option class="option" value="12">December</option>
+                        </select>
+              
+                        <select id="exYear" class="input1" title="select a year">
+                          <option class="option" value="" disabled selected>Select a Year</option>
+                          <option class="option" value="2020">2020</option>
+                          <option class="option" value="2021">2021</option>
+                          <option class="option" value="2022">2022</option>
+                          <option class="option" value="2023">2023</option>
+                          <option class="option" value="2024">2024</option>
+                          <option class="option" value="2025">2025</option>
+                          <option class="option" value="2026">2026</option>
+                          <option class="option" value="2027">2027</option>
+                          <option class="option" value="2028">2028</option>
+                          <option class="option" value="2029">2029</option>
+                          <option class="option" value="2030">2030</option>
+                          <option class="option" value="2031">2031</option>
+                        </select>
+                      </div>
+                      <div class="space"></div>
+                      <form class="form-wrap">
+                      <input style="background-color:  #6e0e77;" class="btn" type="submit" value="Submit" name="Submit">
+                        </form>
+        </form>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+        $("input[name='expiry-data']").mask("00 / 00");
+      function validateForm()
+    {
+    var name=document.getElementById("name");
+    var paymentType=document.getElementById("paymentType");
+    var exMonth=document.getElementById("exMonth");
+    var exYear=document.getElementById("exYear");
+    var cardnumber=document.getElementById("cardnumber");
+    var cvcnumber=document.getElementById("cvcnumber");
+    var date = new Date ();
+    var month = date.getMonth();
+    var year = date.getFullYear();
+    
+                if (name.value===""){
+                            alert("Please enter your name");
+                            name.focus();
+                            return false;
+                }
+                alert("Thank you for your submission");
+                return true;
+    }
+    </script>
+
+
+</body>
+
+
+
+</html>

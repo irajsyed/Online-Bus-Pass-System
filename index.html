@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<style>
+	body{
+		margin:0;
+		background:url('bus1.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+    	background-attachment: fixed;
+	}
+
+	.container{
+		width:100%;
+		margin:none;
+		position: 0;
+		overflow: hidden;
+		background: rgba(0,0,0,0.87);
+		opacity:0.5; 
+	
+	}
+
+	main{
+		padding:20px;
+		margin-top:30px;
+		margin:30px 0;
+	}
+
+	h1{
+		font-family: Century Gothic;
+		font-weight: 10000;
+		font-style: bold;
+		font-size: 4em;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		word-spacing: 0.1em;
+		text-align: center;
+		color: white;
+		padding-top: 20px;
+	}
+
+	h2{
+		font-family: Century Gothic;
+		font-style: bold;
+		font-size: 2em;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		word-spacing: 0.1em;
+		text-align: center;
+		color: white;
+		padding-top: 20px;
+	}
+	.loginbox{
+    width: 520px;
+    height: 450px;
+    background: rgba(0,0,0,0.87);
+	opacity:1.0; 
+    border-radius: 5%;
+    color: #fff;
+    top: 60%;
+    left: 48%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 35px 80px;
+}
+
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: Century Gothic;
+    letter-spacing: 0.1em;
+	word-spacing: 0.1em;
+}
+
+ input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+ input[type="email"],input[type="password"]
+{   
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Century Gothic;
+    letter-spacing: 0.1em;
+}
+ input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:  #6e0e77;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    font-family: Century Gothic;
+    letter-spacing: 0.1em;
+} 
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ec2ec3;
+    color: blanchedalmond;
+    
+} a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+    font-family: Century Gothic;
+    letter-spacing: 0.1em;
+	word-spacing: 0.1em;
+} 
+a:hover
+{
+    color: #ec2ec3; transition: all 0.15s ease-in ;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+	    <section id="main">
+	    	<h1>ONLINE BUS PASS</h1>
+	    </section>
+</div>
+
+<div class="loginbox">
+        <h2>LOGIN</h2>
+        <form action="log.php" method="POST">
+            <p>EMAIL:</p>
+            <input type="email" name="email" placeholder="Enter Your Email" required="Email">
+            
+            <p>PASSWORD:</p>
+            <input type="password" name="password" placeholder="Password" required="Password">
+
+            <input type="submit" name="login" value="login">
+            <a href="signup.html">Don't have an account?</a>
+        </form>
+</div>
+
+</body>
+</html>
